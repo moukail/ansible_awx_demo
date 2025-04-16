@@ -1,0 +1,24 @@
+version: 3
+
+images:
+  base_image:
+    #name: docker.io/redhat/ubi9:latest
+    #name: quay.io/rockylinux/rockylinux:9
+    #name: quay.io/centos/centos:stream10
+    #name: registry.fedoraproject.org/fedora:40
+    name: quay.io/fedora/fedora:40
+
+dependencies:
+  ansible_core:
+    package_pip: ansible-core==2.18.4
+  ansible_runner:
+    package_pip: ansible-runner
+  system:
+    - openssh-clients
+    - sshpass
+  galaxy:
+    collections:
+      - name: community.general
+      - name: community.postgresql
+      - name: community.crypto
+      - name: ansible.posix
