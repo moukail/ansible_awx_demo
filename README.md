@@ -1,3 +1,6 @@
+https://ansible.readthedocs.io/projects/awx/en/latest/index.html
+https://docs.ansible.com/ansible/latest/collections/awx/awx/index.html
+
 https://docs.ansible.com/automation-controller/4.4/html/userguide/overview.html
 
 ## docker
